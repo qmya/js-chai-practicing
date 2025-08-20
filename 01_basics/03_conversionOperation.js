@@ -1,0 +1,62 @@
+let score = "33"
+
+//two ways to check the type
+console.log(typeof score);
+console.log(typeof(score));
+
+//this will convert score in number
+let valueInNumber = Number(score)
+
+console.log(typeof(valueInNumber))
+
+//but what if score is a number with some alpabets
+
+let scoreOne = "444aa"// not a pure number
+
+let convertInNumber = Number(scoreOne)
+
+console.log(typeof(convertInNumber)); // give us number wow! how does this happened. irs should not happened
+
+//lets dig deeper whats inside the convertInNumber
+
+console.log(convertInNumber);//result: NaN (not a number) but type is ***Number***
+
+
+// check null
+
+let scoreTwo = null
+let convertInNumberTwo = Number(scoreTwo);
+let scoreThree = undefined
+let convertInNumberThree = Number(scoreThree)
+
+let scoreFour = true
+let convertInNumberFour =Number(scoreFour)
+
+console.table([convertInNumberTwo,convertInNumberThree,convertInNumberFour])
+
+//results
+//(index) │ Values │
+//├─────────┼────────┤
+//│ 0       │ 0      │
+//│ 1       │ NaN    │
+//│ 2       │ 1   
+
+//*******Conclusion*******/
+//"33" = 33 Number
+// "444aa" = NaN type is number
+//true = 1, false = 0 type is boolean
+
+let isLoggedIn = 1
+let booleanIsLoggedIn = Boolean(isLoggedIn)
+console.log(booleanIsLoggedIn) //True
+//"" => false
+//"1" => true
+
+
+//convert string to number
+
+let someNumber = 33
+
+let stringIntoNumber = String(someNumber)
+console.log(stringIntoNumber) // result 33 w/h is a string
+console.log(typeof stringIntoNumber)//string

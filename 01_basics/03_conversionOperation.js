@@ -60,3 +60,38 @@ let someNumber = 33
 let stringIntoNumber = String(someNumber)
 console.log(stringIntoNumber) // result 33 w/h is a string
 console.log(typeof stringIntoNumber)//string
+
+
+// ************** OPERATIONS *******************\\
+
+let value = 3
+let negValue = -value
+console.log(negValue) // -3
+
+// console.log(2+2); addition
+// console.log(2-2); subtraction
+// console.log(2*2);multiplication
+// console.log(2**3); 2 raise to the power 3
+// console.log(2/3); division
+// console.log(2%3); remainder
+
+
+//adding the string
+
+let str1 = "hello"
+let str2 = " Qandeel"
+let str3 = str1 + str2
+console.log(str3) //hello Qandeel
+
+//console.log("1" + 2); //12
+//console.log(1 + "2"); //12
+//console.log("1" + 2 + 2); //122
+//console.log(1 + 2 + "2"); //32
+
+//console.log( (3 + 4) * 5 % 3);
+
+let gameCounter = 100
+/******** PREFIX & POSTFIX */
+//gameCounter++
+++gameCounter
+console.log(gameCounter); //101 "++ means add 1"
